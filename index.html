@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>7path</title>
+  </head>
+  <body data-barba="wrapper">
+    <!-- starting-loader  -->
+    <div class="start-overlay">
+      <h1 class="text-70">7 Path</h1>
+      <span>CREATE YOUR STYLE</span>
+    </div>
+    <!-- loading screen  -->
+    <div class="loader">
+      <div class="page-transition"></div>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="home-section">
+      <div class="position-relative">
+        <img
+          class="position-absolute top-img-header"
+          src="assets/images/header/2.png"
+          alt=""
+        />
+      </div>
+      <header class="position-relative">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img class="header-logo" src="assets/images/logo.png" alt="" />
+            </a>
+
+            <div class="d-flex align-items-center">
+              <div
+                class="btn btn-sm btn-dark me-2 header-btn d-flex py-2 px-3 br-5 align-items-center d-inline-block d-lg-none"
+              >
+                <a href="#" class="text-decoration-none text-light"
+                  ><svg
+                    class="box-20 me-2"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.0239 21.877C11.0265 22.2948 10.905 22.704 10.6748 23.0527C10.4445 23.4014 10.1159 23.6739 9.73066 23.8356C9.34537 23.9973 8.92074 24.041 8.51061 23.9611C8.10048 23.8811 7.72331 23.6812 7.42692 23.3867C7.13053 23.0922 6.92828 22.7163 6.84579 22.3066C6.76331 21.897 6.80432 21.4721 6.96361 21.0858C7.1229 20.6995 7.39331 20.3692 7.74055 20.1368C8.0878 19.9044 8.49623 19.7803 8.91408 19.7803C9.47136 19.7803 10.006 20.0008 10.4013 20.3936C10.7966 20.7864 11.0204 21.3197 11.0239 21.877ZM19.7138 19.7803C19.2965 19.7803 18.8886 19.9041 18.5417 20.1359C18.1947 20.3677 17.9243 20.6972 17.7646 21.0828C17.6049 21.4683 17.5631 21.8925 17.6445 22.3018C17.7259 22.711 17.9269 23.087 18.2219 23.382C18.517 23.6771 18.8929 23.8781 19.3022 23.9595C19.7115 24.0409 20.1357 23.9991 20.5212 23.8394C20.9067 23.6797 21.2363 23.4093 21.4681 23.0623C21.6999 22.7154 21.8237 22.3074 21.8237 21.8902C21.8237 21.3306 21.6014 20.7939 21.2057 20.3983C20.81 20.0026 20.2734 19.7803 19.7138 19.7803ZM24.184 6.92348L22.0478 15.4815C21.8308 16.3343 21.3356 17.0903 20.6406 17.6301C19.9456 18.1698 19.0905 18.4625 18.2106 18.4617H10.4173C9.53562 18.4617 8.67916 18.1672 7.98394 17.6249C7.28873 17.0826 6.79462 16.3235 6.58007 15.4683L3.4153 2.63786H1.31865C0.968923 2.63786 0.633519 2.49893 0.386224 2.25164C0.138929 2.00434 0 1.66894 0 1.31921C0 0.969482 0.138929 0.634078 0.386224 0.386783C0.633519 0.139488 0.968923 0.00055965 1.31865 0.00055965H4.44385C4.74508 -0.00821647 5.04022 0.0864474 5.28015 0.268791C5.52007 0.451135 5.69031 0.710157 5.7625 1.00273L6.79105 5.27516H22.7467H22.8654C22.9877 5.25568 23.1123 5.25568 23.2346 5.27516C23.4056 5.31798 23.5663 5.39464 23.7072 5.50062C23.848 5.6066 23.9662 5.73975 24.0547 5.89219C24.1432 6.04463 24.2003 6.21327 24.2225 6.38814C24.2447 6.56301 24.2316 6.74056 24.184 6.91029V6.92348ZM21.2171 7.91246H7.45038L9.17781 14.8222C9.24674 15.1016 9.4052 15.3508 9.62901 15.5318C9.85281 15.7127 10.1297 15.8155 10.4173 15.8244H18.171C18.4722 15.8331 18.7674 15.7385 19.0073 15.5561C19.2472 15.3738 19.4175 15.1148 19.4897 14.8222L21.2171 7.91246Z"
+                      fill="white"
+                    />
+                  </svg> </a
+                ><a
+                  href="sign-in.html"
+                  class="text-decoration-none text-14 ms-2 text-light"
+                  >Sign In</a
+                >
+              </div>
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <svg
+                  width="31"
+                  height="21"
+                  viewBox="0 0 31 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.0280457 20.9254H30.3084V17.561H0.0280457V20.9254ZM0.0280457 12.5142H30.3084V9.14974H0.0280457V12.5142ZM0.0280457 0.738525V4.10301H30.3084V0.738525H0.0280457Z"
+                    fill="#FF8001"
+                  />
+                </svg>
+
+                <!-- <span class="navbar-toggler-icon"></span> -->
+              </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-4">
+                  <a class="nav-link ls-4" aria-current="page" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link ls-4" href="templates.html">Template</a>
+                </li>
+                <li class="nav-item me-4">
+                  <a class="nav-link ls-4" href="contact-us.html">Contact</a>
+                </li>
+              </ul>
+              <div
+                class="btn btn-sm btn-dark header-btn d-flex py-2 px-3 br-5 align-items-center d-inline-none d-lg-block"
+              >
+                <a href="#" class="text-decoration-none text-light"
+                  ><svg
+                    class="box-20 me-2"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.0239 21.877C11.0265 22.2948 10.905 22.704 10.6748 23.0527C10.4445 23.4014 10.1159 23.6739 9.73066 23.8356C9.34537 23.9973 8.92074 24.041 8.51061 23.9611C8.10048 23.8811 7.72331 23.6812 7.42692 23.3867C7.13053 23.0922 6.92828 22.7163 6.84579 22.3066C6.76331 21.897 6.80432 21.4721 6.96361 21.0858C7.1229 20.6995 7.39331 20.3692 7.74055 20.1368C8.0878 19.9044 8.49623 19.7803 8.91408 19.7803C9.47136 19.7803 10.006 20.0008 10.4013 20.3936C10.7966 20.7864 11.0204 21.3197 11.0239 21.877ZM19.7138 19.7803C19.2965 19.7803 18.8886 19.9041 18.5417 20.1359C18.1947 20.3677 17.9243 20.6972 17.7646 21.0828C17.6049 21.4683 17.5631 21.8925 17.6445 22.3018C17.7259 22.711 17.9269 23.087 18.2219 23.382C18.517 23.6771 18.8929 23.8781 19.3022 23.9595C19.7115 24.0409 20.1357 23.9991 20.5212 23.8394C20.9067 23.6797 21.2363 23.4093 21.4681 23.0623C21.6999 22.7154 21.8237 22.3074 21.8237 21.8902C21.8237 21.3306 21.6014 20.7939 21.2057 20.3983C20.81 20.0026 20.2734 19.7803 19.7138 19.7803ZM24.184 6.92348L22.0478 15.4815C21.8308 16.3343 21.3356 17.0903 20.6406 17.6301C19.9456 18.1698 19.0905 18.4625 18.2106 18.4617H10.4173C9.53562 18.4617 8.67916 18.1672 7.98394 17.6249C7.28873 17.0826 6.79462 16.3235 6.58007 15.4683L3.4153 2.63786H1.31865C0.968923 2.63786 0.633519 2.49893 0.386224 2.25164C0.138929 2.00434 0 1.66894 0 1.31921C0 0.969482 0.138929 0.634078 0.386224 0.386783C0.633519 0.139488 0.968923 0.00055965 1.31865 0.00055965H4.44385C4.74508 -0.00821647 5.04022 0.0864474 5.28015 0.268791C5.52007 0.451135 5.69031 0.710157 5.7625 1.00273L6.79105 5.27516H22.7467H22.8654C22.9877 5.25568 23.1123 5.25568 23.2346 5.27516C23.4056 5.31798 23.5663 5.39464 23.7072 5.50062C23.848 5.6066 23.9662 5.73975 24.0547 5.89219C24.1432 6.04463 24.2003 6.21327 24.2225 6.38814C24.2447 6.56301 24.2316 6.74056 24.184 6.91029V6.92348ZM21.2171 7.91246H7.45038L9.17781 14.8222C9.24674 15.1016 9.4052 15.3508 9.62901 15.5318C9.85281 15.7127 10.1297 15.8155 10.4173 15.8244H18.171C18.4722 15.8331 18.7674 15.7385 19.0073 15.5561C19.2472 15.3738 19.4175 15.1148 19.4897 14.8222L21.2171 7.91246Z"
+                      fill="white"
+                    />
+                  </svg> </a
+                ><a
+                  href="sign-in.html"
+                  class="text-decoration-none text-14 ms-2 text-light"
+                  >Sign In</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="position-relative">
+        <img
+          class="position-absolute header-left-img-first"
+          src="assets/images/header/3.png"
+          alt=""
+        />
+        <img
+          class="position-absolute header-right-image"
+          src="assets/images/header/1.png"
+          alt=""
+        />
+        <img
+          class="position-absolute header-right-img-second"
+          src="assets/images/header/4.png"
+          alt=""
+        />
+        <div class="text-center position-relative header-content pt-160 px-5">
+          <div class="text-24 fw-normal ls-4">CREATE YOUR</div>
+          <h1 class="text-84 fw-bold mb-2">Custom Website & UI</h1>
+          <h5 class="fw-normal mb-4">
+            Choose customized designs and UI for your website and have it ready
+            in 3-5 days.
+          </h5>
+          <a
+            href="about.html"
+            class="btn btn-secondary rounded-pill py-3 px-4 px-md-5 text-uppercase ls-4"
+          >
+            GET Started
+          </a>
+          <a class="btn" data-toggle="modal" href="#myModal">Launch Modal</a>
+        </div>
+        <div class="d-flex justify-content-center header-btm-image">
+          <img
+            class="text-center img-fluid"
+            src="assets/images/header/5.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section
+        class="about-us-section bg-primary text-center text-white position-relative pb-4"
+      >
+        <div class="bg-white w-100 py-3 text-primary bb-25 who-we-are-bb"></div>
+        <img
+          class="position-absolute abt-us-img start-0 bottom-0 mb-5 ms-5"
+          src="assets/images/au-bg-2.png"
+          alt=""
+        />
+        <img
+          class="position-absolute abt-us-img-2 end-0 top-0 mt-5 me-5"
+          src="assets/images/au-bg.png"
+          alt=""
+        />
+        <div class="text-36 fw-bold mb-4 about-us-title px-4">Who We Are</div>
+        <div class="d-flex justify-content-center fw-bold mb-4 flex-wrap px-4">
+          <p class="text-20 mb-sm-0 mb-2 me-2">
+            Affordable Pricing
+            <span class="mx-2 d-none d-sm-inline-flex">|</span>
+          </p>
+          <p class="text-20 mb-sm-0 mb-2 me-1">
+            Responsive Website
+            <span class="mx-2 d-none d-sm-inline-flex">|</span>
+          </p>
+          <p class="text-20 mb-0">Unlimited Revisions</p>
+        </div>
+        <div class="text-18 fw-regular mw-850 mx-auto mb-4 px-4">
+          The 7paths UI Teams designs mobile responsive and interactive
+          WordPress and Shopify themes that are affordable and available
+          immedia. Browse through our library of themes to select a design that
+          suits your branding needs or reach out to the team to discuss creating
+          a one of a kind design for your business. We can have your Custom
+          Website design ready in 3-7 days! When it comes to creating your
+          project, we want to turn your vision into a reality.
+        </div>
+        <button
+          type="button"
+          class="btn btn-light text-primary rounded-pill py-3 px-5 text-uppercase f-600"
+        >
+          Request a free consult
+        </button>
+      </section>
+      <section class="mt-130 mb-90">
+        <div class="container">
+          <div class="grid-container" data-aos="fade-up">
+            <a href="#" class="text-decoration-none text-dark">
+              <div class="custom-card-one text-center">
+                <div class="text-27 f-600 mb-4 pt-5">WordPress Themes</div>
+                <img
+                  class="img-fluid"
+                  src="assets/images/garbage-img/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#" class="text-decoration-none text-dark">
+              <div class="custom-card-one text-center">
+                <div class="text-27 f-600 mb-4 pt-5">WordPress Themes</div>
+                <img
+                  class="img-fluid"
+                  src="assets/images/garbage-img/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="#" class="text-decoration-none text-dark">
+              <div class="custom-card-one text-center">
+                <div class="text-27 f-600 mb-4 pt-5">WordPress Themes</div>
+                <img
+                  class="img-fluid"
+                  src="assets/images/garbage-img/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="text-center">
+        <div class="container">
+          <h1 class="text-36 fw-bold text-capitalize" data-aos="fade-up">
+            Website templates for every purpose
+          </h1>
+          <div class="text-18 fw-normal mb-5" data-aos="fade-up">
+            Browse our catalog of beautiful WordPress themes and Figma designs
+          </div>
+          <ul
+            class="nav nav-pills mb-38 outline-nav justify-content-between"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item mb-3" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All Categories
+              </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Ecommerce
+              </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Baby Shower
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="grid-container-2 mb-5" data-aos="fade-up">
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div
+                    class="text-16 f-600 mb-3 text-lg-center text-start px-4"
+                  >
+                    Click the preview
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5as
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <a
+                        href="preview.html"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div class="text-16 f-600 mb-3">
+                    Theme Name - Template Designation
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5a
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div class="text-16 f-600 mb-3">
+                    Theme Name - Template Designation
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div class="text-16 f-600 mb-3">
+                    Theme Name - Template Designation
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div class="text-16 f-600 mb-3">
+                    Theme Name - Template Designation
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-card-two bg-gray">
+                  <img
+                    class="w-100 br-5 mb-3"
+                    src="assets/images/garbage-img/2.png"
+                    alt=""
+                  />
+                  <div class="text-16 f-600 mb-3">
+                    Theme Name - Template Designation
+                  </div>
+                  <div class="d-flex justify-content-between px-4 pb-4">
+                    <div
+                      class="bg-primary text-white px-2 py-1 rounded text-14"
+                    >
+                      $10.5
+                    </div>
+                    <div class="d-flex">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-dark me-2 br-5"
+                      >
+                        Buy
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm f-600 bg-white"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              tab 2
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              tab 3
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-lg text-16 py-3 px-5 btn-primary mb-5"
+          >
+            View All Template
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black py-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row flex-wrap text-center text-md-start justify-content-between"
+        >
+          <div class="mb-4">
+            <img class="img-fluid" src="assets/images/dark-logo.png" alt="" />
+          </div>
+          <div class="mb-4">
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >Privacy & Policy</a
+            >
+          </div>
+          <div class="mb-4">
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >FAQ</a
+            >
+          </div>
+          <div class="mb-4">
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >About</a
+            >
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >Templates</a
+            >
+            <a href="#" class="mb-4 text-light text-decoration-none d-block"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <hr class="footer-divider-color" />
+        <div
+          class="d-flex flex-column flex-md-row flex-wrap text-center align-items-center text-md-start justify-content-between"
+        >
+          <div class="text-14 text-gray mb-4">
+            © 2022 7Paths LLC. All rights reserved
+          </div>
+          <div class="d-flex mb-4">
+            <a href="#" class="text-decoration-none footer-icon me-4"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-decoration-none footer-icon me-4"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="text-decoration-none footer-icon me-4"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-decoration-none footer-icon"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+      integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
