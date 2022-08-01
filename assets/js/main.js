@@ -2,30 +2,30 @@
 // $(window).on("load", function () {
 
 // });
-const tl = gsap.timeline();
-tl.fromTo(
-  ".start-overlay h1, .start-overlay span",
-  {
-    y: "0",
-    opacity: 1,
-  },
-  {
-    y: "-60",
-    opacity: 0,
-    duration: 1,
-    stagger: 0.25,
-    delay: 0.3,
-  }
-);
-tl.to(".start-overlay", {
-  y: "-100%",
-  duration: 1,
-  delay: 0.1,
-  ease: "Expo.easeInOut",
-});
 $(document).ready(function () {
   if (localStorage.getItem("popState") != "shown") {
-    $(".start-overlay h1, .start-overlay span").delay(2000).fadeIn();
+    const tl = gsap.timeline();
+    tl.fromTo(
+      ".start-overlay",
+      {
+        y: "0",
+        top: 0,
+        opacity: 1,
+      },
+      {
+        y: "-60",
+        duration: 0.3,
+        stagger: 0.25,
+        delay: 0.3,
+      }
+    );
+    tl.to(".start-overlay", {
+      y: "-100%",
+      duration: 1,
+      opacity: 0,
+      delay: 0.1,
+      ease: "Expo.easeInOut",
+    });
     localStorage.setItem("popState", "shown");
   } else {
     // DELETE THIS ELSE ON PRODUCTION
